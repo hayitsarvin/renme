@@ -39,7 +39,7 @@ const ItemSchema = new mongoose.Schema({
   },
   hourly:{
     type: Boolean,
-    default: false
+    default: true
   },
   booked: [BookSchema],
   featured : {
