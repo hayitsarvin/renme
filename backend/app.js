@@ -5,8 +5,8 @@ const routes = require('./routes/api/items.js');
 const routesAuth = require('./routes/api/auth.js');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
-
-
+var cors = require('cors')
+app.use(cors())
 app.use(
     fileUpload({
         limits: {
