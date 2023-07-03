@@ -29,8 +29,8 @@ require('dotenv').config();
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('Hello world!'));
-app.use('/api', routes);
-app.use('/api/auth', routesAuth);
+app.use('/api',cors() ,routes);
+app.use('/api/auth',cors(), routesAuth);
 
 const port = process.env.PORT || 8082;
 
