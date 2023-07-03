@@ -27,7 +27,7 @@ router.post('/uploadImage', (req, res) => {
   // if (/^image/.test(image.file.mimetype)) return res.sendStatus(400);
 
   // Move the uploaded image to our upload folder
-  image.file.mv("../frontend/public" + '/images/' + image.file.name);
+  // image.file.mv("../frontend/public" + '/images/' + image.file.name);
  
   // All good
   res.sendStatus(200);
@@ -39,8 +39,8 @@ router.post('/', (req, res) => {
 
   // If no image submitted, exit
   // if (!image) return res.sendStatus(400);
-  
-  req.body.images[0].src ="/images/" + req.body.images[0].src 
+  // req.body.images[0].src 
+  req.body.images[0].src ="/images/" + "shini.jpg"
   // If does not have image mime type prevent from uploading
   // if (/^image/.test(image.mimetype)) return res.sendStatus(400);
 
