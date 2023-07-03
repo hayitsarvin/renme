@@ -5,7 +5,7 @@ const routes = require('./routes/api/items.js');
 const routesAuth = require('./routes/api/auth.js');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
-var cors = require('cors')
+
 app.use(cors())
 app.use(
     fileUpload({
@@ -23,7 +23,7 @@ require('dotenv').config();
 // Create collection of Model
 
 // cors
-app.use(cors({ origin: true, credentials: true }));
+// app.use(cors({ origin: true, credentials: true }));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
