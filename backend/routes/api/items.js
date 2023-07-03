@@ -18,10 +18,13 @@ router.get('/test', (req, res) => res.send({
 }));
 router.post('/uploadImage', (req, res) => {
   // Get the file that was set to our field named "image"
+  console.log("iu0");
   const  image  = req.files;
+  console.log("iu1" ,image);
 
   // If no image submitted, exit
   if (!image) return res.sendStatus(400);
+  console.log("iu2" ,image);
 
   // If does not have image mime type prevent from uploading
   // if (/^image/.test(image.file.mimetype)) return res.sendStatus(400);
@@ -36,11 +39,14 @@ router.post('/uploadImage', (req, res) => {
 router.post('/', (req, res) => {
   // Get the file that was set to our field named "image"
   // const { image } = req.files;
+  console.log("pu0" ,req.body);
 
   // If no image submitted, exit
   // if (!image) return res.sendStatus(400);
   // req.body.images[0].src 
   req.body.images[0].src ="/images/" + "shini.jpg"
+  console.log("pu1" ,req.body);
+
   // If does not have image mime type prevent from uploading
   // if (/^image/.test(image.mimetype)) return res.sendStatus(400);
 
