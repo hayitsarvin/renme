@@ -3,6 +3,7 @@ const connectDB = require('./config/db');
 const app = express();
 const routes = require('./routes/api/items.js');
 const routesAuth = require('./routes/api/auth.js');
+const routesReq = require('./routes/api/requests.js');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
 
@@ -31,6 +32,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('Hello world!'));
 app.use('/api',cors() ,routes);
 app.use('/api/auth',cors(), routesAuth);
+app.use('/api/req',cors(), routesReq);
 
 const port = process.env.PORT || 8082;
 

@@ -55,13 +55,13 @@ router.post('/', (req, res) => {
 
   // All good
   // res.sendStatus(200);
-  console.log("fuckk this" , req.body);
+
   item.create(req.body)
     .then(book => res.json({ msg: 'Book added successfully' }))
     .catch(err => res.status(400).json({ error: 'Unable to add this book' }));
 });
 
-// @route GET api/books
+// @route GET api/books 
 // @description Get all books
 // @access Public
 router.get('/', (req, res) => {
@@ -73,12 +73,15 @@ router.get('/', (req, res) => {
   // @route GET api/books/:id
   // @description Get single book by id
   // @access Public
-  router.get('/:id', (req, res) => {
+  router.get('/:id', async (req, res) => {
     console.log(req.params.id);
     item.findById(req.params.id)
-      .then(book => res.json(book))
-      .catch(err => res.status(404).json({ nobookfound: 'No Book found' }));
+      .then(book => {console.log("item :" , book ); res.json(book)})
+      .catch(err => console.log("error"  ));
   });
+
+
+
   
   // @route GET api/books
   // @description add/save book
@@ -92,13 +95,13 @@ router.get('/', (req, res) => {
   // @route GET api/books/:id
   // @description Update book
   // @access Public
-//   router.put('/:id', (req, res) => {
-//     Book.findByIdAndUpdate(req.params.id, req.body)
-//       .then(book => res.json({ msg: 'Updated successfully' }))
-//       .catch(err =>
-//         res.status(400).json({ error: 'Unable to update the Database' })
-//       );
-//   });
+  router.put('/:id', (req, res) => {
+    item.findByIdAndUpdate(req.params.id, req.body)
+      .then(book => res.json({ msg: 'Updated successfully' }))
+      .catch(err =>
+        res.status(400).json({ error: 'Unable to update the Database' })
+      );
+  });
   
   // @route GET api/books/:id
   // @description Delete book by id

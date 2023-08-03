@@ -78,6 +78,21 @@ router.post('/register', async (req, res) => {
         })
     })
   });
+  router.post("/authenticate",(req, res) => {
+    const { email } = req.body;
+    console.log("email",email);
+    // Get or create user on Chat Engine!
+    try {
+       axios.put(
+        "https://api.chatengine.io/users/",
+        { username: email, secret: email, first_name: email },
+        { headers: { "Private-Key": "dfda766d-aa8c-4c16-9ef0-94feb3f05d10" } }
+      );
+      res.json({message:"fuckkk"})
+    } catch (e) {
+      
+    }
+  });
 
  const  verifyJWT = (req, res , next) => {
     console.log("no token1" , req.user);
