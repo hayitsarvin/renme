@@ -1,0 +1,14 @@
+.categories-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+.home-categories-section{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.see-all-categories-div{
+    text-align: center;
+    margin-top: 2%;
+}

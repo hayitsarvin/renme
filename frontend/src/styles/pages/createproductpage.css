@@ -1,0 +1,23 @@
+.create-product-page .small-images-div{
+    display: flex;
+}
+.create-product-page .small-images-div .small-image-div{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.create-product-page .small-images-div .small-image-div .small-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 430px) {
+
+    .product-page .input-price-name-div .price-group{
+        width: 25%;
+    }
+    .product-page .dropdown-div{
+        width: 20%;
+    }
+}

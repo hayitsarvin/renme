@@ -1,0 +1,89 @@
+.filters-list-div{
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    position: sticky;
+}
+.filters-list-div .single-filter-div{
+    border-bottom: 1px solid black;
+}
+.filters-list-div .filter-name-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filters-list-div .filter-name-div .filter-name{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.filters-list-div .filter-value-list{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.filters-list-div .filter-categorie-value {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+.filters-list-div .filter-categorie-value .categories-icon{
+    height: 18px;
+    margin-right: 2%;
+}
+.filters-list-div .filter-categorie-value .categorie-name{
+    text-transform: uppercase;
+}
+.filters-list-div .filter-categorie-value{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.filters-list-div .filter-categorie-value.active{
+    background-color: #ffe607;
+}
+@media only screen and (max-width: 430px) {
+    .mobile-filter-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+    .mobile-filter-div .filters-btn-div{
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+    }
+    .mobile-filter-div .filters-btn-div img{
+        height: 30px;
+    }
+    .mobile-filter-div .search-div input{
+        background-color: #eaeaea;
+        border: none;
+        padding: 12px;
+        border-radius: 100px;
+    }
+    .mobile-filter-div .filters-list-div{
+        position: fixed;
+        background-color: white;
+        width: 75%;
+        padding: 7%;
+
+        top: 0;
+        right: 0;
+        bottom: -10%;
+        z-index: 5;
+        box-shadow: 0px 0px 15px black;
+    }
+    .mobile-filter-div div.filters-list-div.closed{
+        display: none;
+    }
+    .mobile-filter-div .close-popup img{
+        height: 40px;
+    }  
+    .mobile-filter-div .close-popup{
+  
+        text-align: right;
+    }  
+}

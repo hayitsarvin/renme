@@ -1,0 +1,159 @@
+.signin-page .title , .signup-page .title{
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.signin-page , .signup-page{
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 6%; */
+}
+.signin-page .yellow-background-circle , .signup-page .yellow-background-circle{
+    height: 850px;
+    width: 850px;
+    background-color: #ffe607;
+    position: absolute;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    left: 100%;
+    top: 100%;
+    
+}
+
+.signin-page .signin-div , .signup-page .signup-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.signin-page .signin-content-div,.signup-page .signup-content-div{
+    height: 100%;
+    width: 35%;
+}
+.signin-form,.signup-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.signin-form label , .signup-form label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    
+
+}
+.signin-div .input-name , .signup-div .input-name{
+    font-weight: 400;
+}
+.signin-form .input , .signup-form .input{
+    border: 2px solid black;
+    border-radius: 100px;
+    font-size: 17px;
+    padding: 17px 22px;
+    width: auto;
+    margin-top: 8px;
+}
+.signin-page input.btn , .signup-page input.btn{
+    border: none;
+    margin-top: 5%;
+    /* text-align: center; */
+}
+.signin-page .signup-link-div , .signup-page .signin-link-div{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+.agree-term-div{
+    display: flex;
+    margin-top: 5px;
+}
+.agree-term-div .checkbox{
+    border: 2px solid black;
+    height: 25px;
+    border-radius: 100%;
+    width: 25px;
+    padding: 3px;
+}
+.agree-term-div .checkbox .inner-checkbox{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.agree-term-div .checkbox .inner-checkbox.checked{
+    background-color: black;
+
+}
+.agree-term-div .agree-term{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    margin-left: 10px;
+}
+.signin-page .signup-link-div .signup-link span ,.signup-page .signin-link-div .signin-link span{
+    color: black;
+    font-weight: bold;
+}
+.code-input-container{
+    gap: 12px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* height: 70px; */
+    /* width: 350px; */
+}
+.code-input-character{
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   height: fit-content;
+    box-shadow: 5px 10px #c9c9c9;
+    
+}
+.veri-code-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.code-input-character--selected{
+    color: #ffe607;
+    outline-color: #ffea07;
+}
+.code-input-character--inactive{
+    background-color: white;
+    color: black;
+}
+.or-text{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+/* mobile quries start */
+@media only screen and (max-width: 430px) {
+
+    .signin-page .title , .signup-page .title{
+        font-size: 20px;
+        
+    }
+    .signin-page .yellow-background-circle {
+        height: 200px;
+        width: 200px;
+
+    }
+    .signup-page .yellow-background-circle{
+        display: none;
+    }
+    .signin-page .signin-content-div, .signup-page .signup-content-div{
+        width: 100%;
+    }
+    .signin-div .input-name , .signup-div .input-name ,.signin-form .input , .signup-form .input{
+        font-size: 15px;
+    }
+    .signin-page , .signup-page{
+        
+        margin-top: 6%;
+    }
+}

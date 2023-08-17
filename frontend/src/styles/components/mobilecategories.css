@@ -1,0 +1,34 @@
+.mobile-categories-section .mobile-categories-list{
+    margin-top: 5%;
+}
+.mobile-categories-section .x-scroll{
+    /* display: flex; */
+    /* width: 300vw; */
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+}
+.mobile-categories-section .mobile-categories-list .mobile-categories-card{
+    background-color: #ffe607;
+    height: 90px;
+    padding: 5px;
+    min-width: 75px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-left: 3%; */
+    margin-right: 3%;
+}
+.mobile-categories-section .mobile-categories-list .mobile-categories-card img {
+    height: 20px;
+}
+.mobile-categories-section .mobile-categories-list .mobile-categories-card .category-name {
+    font-size: 11px;
+    text-transform: capitalize;
+}
+

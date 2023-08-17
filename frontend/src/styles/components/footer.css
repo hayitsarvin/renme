@@ -1,0 +1,92 @@
+.footer{
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+.footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 45%;
+}
+.footer .links-content-div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-logo{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.footer .footer-logo span{
+    text-transform: capitalize;
+    color: #ffe607;
+}
+.footer .creator-div .creator{
+    text-transform: capitalize;
+}
+.footer .creator-div .creator span{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.footer .link-div .footer-title{
+    text-transform: uppercase;
+    
+}
+.footer .link-div .link{
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 5%;
+}
+.footer .container{
+    height: 100%;
+}
+.footer-back-circle{
+    height: 1000px;
+    width: 1000px;
+    background-color: #ffe607;
+    position: absolute;
+    border-radius: 100%;
+    left: 85%;
+    top: 150%;
+    transform: translate(-50%,-50%);
+
+}
+.link-div a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+    .footer-back-circle{
+        height: 200px;
+        width: 200px;
+        
+        transform: translate(-50%,-100%);
+
+        left: 100%;
+        bottom: 0;
+    
+    }
+    .footer{
+        
+        margin-top: 15%;
+    }
+    .footer .footer-content{
+        width: 73%;
+    }
+    .footer .footer-logo{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .footer .link-div .footer-title{
+       font-size: 20px;
+        
+    }
+    .footer .link-div#last{
+        display: none;
+    }
+    .footer .creator-div .creator{
+        font-size: 12px;
+    }
+}

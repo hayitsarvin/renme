@@ -1,0 +1,57 @@
+.mobile-popular-section .mobile-popular-list{
+    margin-top: 5%;
+}
+.mobile-popular-section .x-scroll{
+    /* display: flex; */
+    /* width: 300vw; */
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+}
+.mobile-popular-section .mobile-popular-list .product-card{
+    display: inline-block;
+    width: 45%;
+    height: 250px;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+.mobile-popular-section  .product-card .product-card-content-div .product-name,.mobile-popular-section  .product-card .product-card-content-div .date{
+
+    font-size: 12px;
+}
+.mobile-popular-section .creator-name{
+    font-size: 10px;
+}
+.mobile-popular-section .product-card .label{
+    font-size: 10px;
+}
+.mobile-popular-section .product-card .product-card-content-div{
+    padding: 10px;
+}
+.mobile-popular-section .product-card .creator-image-div{
+    height: 35px;
+    width: 35px;
+    display: none;
+}
+.mobile-popular-section .btn{
+    padding: 9px 15px;
+
+}
+.mobile-popular-section .btn .btn-text{
+    font-size: 8px;
+}
+.mobile-popular-section .product-card .price{
+    font-size: 10px;
+    
+}
+.mobile-popular-section .title-and-more-div{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.mobile-popular-section .title-and-more-div .see-all{
+    text-transform: capitalize;
+}

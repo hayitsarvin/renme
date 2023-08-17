@@ -1,0 +1,41 @@
+.marketplace-page .marketplace-div{
+    display: flex;
+}
+.marketplace-page .filters-div{
+    width: 30%;
+
+}
+.marketplace-page .items-div{
+    width: 70%;
+
+    padding-left: 2%;
+}
+.marketplace-page{
+    margin-top: 5%;
+}
+.marketplace-page .marketplace-cards-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 30px;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 430px) {
+    .marketplace-page .marketplace-div{
+        flex-direction: column;
+
+    }
+    .marketplace-page .filters-div{
+        width: 100%;
+    
+    }
+    .marketplace-page .items-div{
+        width: 100%;
+    
+        padding-left: 0%;
+    }
+    .marketplace-page{
+        margin-top: 20%;
+    }
+}

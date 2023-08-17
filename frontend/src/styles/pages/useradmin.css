@@ -1,0 +1,328 @@
+.user-admin-menu-div{
+    width: 30%;
+    background-color: #0a0a0a;
+    /* background-color: white; */
+    /* box-shadow: 0px 0px 15px rgb(185, 185, 185); */
+    border-radius: 20px;
+    height: 80vh;
+    color: white;
+    /* color: black; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 10%;
+
+}
+.user-admin-menu-div .user-info-div .user-image-mask{
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.user-admin-menu-div .user-info-div .user-image-mask .user-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.user-admin-menu-div .user-info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-admin-menu-div .user-info-div .user-name , .user-admin-menu-div .user-info-div .user-email{
+    text-transform: capitalize;
+    text-align: center;
+}
+.user-admin-menu-div .user-info-div .user-name{
+    font-size: 25px;
+}
+.user-admin-menu-div .user-info-div .user-email{
+    font-weight: 300;
+    color: rgb(205, 205, 205);
+}
+.user-admin-page{
+    margin-top: 7%;
+}
+.user-admin-page .container{
+    display: flex;
+    gap: 20px;
+}
+.user-admin-menu-div .user-menu-links-div .user-menu-link{
+    margin-bottom: 10px;
+}
+.user-admin-menu-div .user-menu-links-div .user-menu-link .btn{
+    width: 100%;
+    text-align: center;
+}
+.user-my-rentals-div{
+    width: 70%;
+
+}
+.user-my-rentals-div .user-rental-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 2%;
+    height: 500px;
+}
+.add-item-card a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.user-my-rentals-div .header-div .title{
+    text-transform: capitalize;
+}
+.user-my-items .add-item-card{
+    background-color: #f5f5f5;
+    width: 31%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(188, 188, 188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.user-my-items .add-item-card .plus-icon{
+    font-size: 80px;
+}
+.user-my-items .add-item-card .add-item-text{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.my-profile-div{
+    width: 70%;
+}
+.my-profile-div .name-and-email{
+    display: flex;
+    justify-content: space-between;
+}
+.my-profile-div .name-and-email .form__group{
+    /* display: inline-block; */
+    width: 45%;
+}
+.my-profile-div .form__group.verified input, .my-profile-div .form__group.verified label{
+    color: green;
+    border-color: green;
+    
+}
+.my-profile-div .form__group.disabled{
+    opacity: 0.3;
+}
+.my-profile-div .info-div .form-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.loading-div-admin{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.admin-list-empty-div{
+    width: 100%;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.admin-list-empty-div .empty-text{
+        font-size: 35px;
+        text-transform: capitalize;
+        font-weight: 800;
+        opacity: 0.4;
+}
+.requests-outer-div{
+    width: 70%;
+}
+.requests-outer-div .requests-nav-div{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.requests-outer-div .requests-nav-div .requests-nav-btn{
+    background-color: white;
+    border: 1.5px solid black;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 100px;
+    text-transform: capitalize;
+    margin-right: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.requests-outer-div .requests-nav-div .requests-nav-btn.active{
+    background-color: #ffe607;
+    opacity: 1;
+
+}
+.requestcard-div {
+    width: 100%;
+    
+    padding: 10px;
+    display: flex;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+.req-card-loading-div{
+    height: 150px;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.requestcard-div .request-product-div{
+    display: flex;
+    width: 70%;
+    
+}
+.requestcard-div .request-product-div .product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5%;
+    text-transform: capitalize;
+}
+.requestcard-div .request-product-div .product-info .price{
+    opacity: 0.7;
+}
+.requestcard-div .request-product-div .booked-dates-div{
+    display: flex;
+}
+.requestcard-div .request-product-div .booked-dates-div .start-day-div ,.requestcard-div .request-product-div .booked-dates-div .end-day-div{
+    display: flex;
+    flex-direction:row;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.requestcard-div .request-product-div .booked-dates-div .date{
+    background-color: #ffe607;
+    padding: 10px;
+    border-radius: 100px;
+    font-size: 13px;
+    margin-left: 10px;
+    /* border: 1.5px solid black; */
+}
+.requestcard-div .request-product-div .image-div-mask{
+    max-height: 150px;
+    max-width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+} 
+.requestcard-div .request-product-div .image-div-mask img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.requestcard-div .req-why-div .req-why{
+    color: #535353;
+    font-size: 14px;
+}
+.requestcard-div .req-accepted-div{
+    text-align: center;
+}
+.requestcard-div .req-accepted-div img{
+    height: 35px;
+}
+.requestcard-div .req-accepted-div .req-accepted-text{
+    color: rgb(0, 193, 0);
+}
+.requestcard-div .request-actions-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-transform: capitalize;
+}
+.requestcard-div .request-actions-div .btn-accept{
+    background-color: rgb(0, 197, 0);
+    /* border: 1px solid black; */
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+.requestcard-div .request-actions-div .btn-reject{
+    background-color: rgb(227, 0, 0);
+    /* border: 2px solid black; */
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+
+}
+.requestcard-div .request-actions-div .btn-chat{
+    background-color: #ffe607;
+    /* border: 2px solid black; */
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+
+
+}
+.requestcard-div .request-actions-div .btn-pay{
+    background-color:rgb(0, 119, 255);
+   color: white;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+}
+.chats-div {
+    width: 100% !important;
+    
+}
+.req-status-div {
+    padding: 10px;
+    border-radius: 100px;
+}
+.req-status-div.rejected{
+    background-color: red;
+}
+.req-status-div.accepted{
+    background-color: rgb(0, 208, 0);
+}
+.req-status-div.waiting{
+    background-color: yellow;
+}
+@media only screen and (max-width: 430px) {
+  
+    .user-admin-menu-div{
+        display: none;
+    }
+    .my-profile-div, .user-my-rentals-div , .loading-div-admin , .user-my-rentals-div user-my-items-div{
+        width: 100%;
+    }
+    .user-my-rentals-div .user-rental-items{
+        margin-top: 20px;
+    }
+
+    .user-admin-page{
+        margin-top: 20%;
+    }
+    .user-my-items .add-item-card{
+        width: 100%;
+        height: 50%;
+    }
+}

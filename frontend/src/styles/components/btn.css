@@ -1,0 +1,50 @@
+.btn.black{
+    background-color: #000000;
+    color: white;
+}
+.btn.yellow{
+    background-color: #FFE607;
+    color: black;
+}
+.btn{
+    border-radius: 100px;
+    display: inline-block;
+    padding: 18px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+
+}
+.yellow .btn-dark-layer{
+    background-color: #efd700;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top:0;
+    transition: 0.4s;
+    z-index: 0;
+}
+.black .btn-dark-layer{
+    background-color: #333333;
+    height: 102%;
+    width: 102%;
+    position: absolute;
+    left: -102%;
+    top:-1%;
+    transition: 0.4s;
+    z-index: 0;
+}
+.btn:hover .btn-dark-layer{
+    left: 0;
+}
+.margin-right{
+    margin-right: 10px;
+}
+.btn .btn-text{
+   z-index: 1;
+   position: relative;
+}

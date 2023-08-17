@@ -1,0 +1,21 @@
+.map-div{
+    margin-top: 3%;
+}
+.map-item-card{
+    height: 85px;
+    width: 85px;
+}
+.map-item-card .image-mask{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #ffe607;
+}
+.image-mask .map-item-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
