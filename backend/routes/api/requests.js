@@ -14,6 +14,13 @@ Request.find({owner:  req.params.owner})
 .catch(err => res.status(404).json({ nobooksfound: 'No Books found' }));
       
 });
+router.get('/get/sent/:customer', (req, res) => {
+ 
+  Request.find({customer:  req.params.customer})
+  .then(items => res.json(items))
+  .catch(err => res.status(404).json({ nobooksfound: 'No Books found' }));
+        
+  });
 router.get('/get', (req, res) => {
  
     Request.find( )

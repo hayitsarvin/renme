@@ -5,6 +5,24 @@ const Item = require("../../models/item")
 const express = require('express');
 const router = express.Router();
 require('dotenv').config();
+const accountSid = "ACd02fbd5f6d52c13e61eba8d5b8f76b72";
+const authToken = "4ec50ddbc993cdf15fb9cb631335ac5b";
+const client = require('twilio')(accountSid, authToken);
+
+
+router.post('/sms', async (req, res) => {
+  const smsInfo = req.body
+  console.log("sms" ,smsInfo)
+  // client.messages
+  // .create({
+  //    body: smsInfo.message,
+  //    from: '+17408411600',
+  //    to: sms.phone
+  //  })
+  // .then(message => res.json({msg: message.sid}));
+
+  
+});
 
 router.post('/register', async (req, res) => {
     const user = req.body;
@@ -88,7 +106,7 @@ router.post('/register', async (req, res) => {
         { username: email, secret: email, first_name: email },
         { headers: { "Private-Key": "dfda766d-aa8c-4c16-9ef0-94feb3f05d10" } }
       );
-      res.json({message:"fuckkk"})
+      res.json({message:""})
     } catch (e) {
       
     }
